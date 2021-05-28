@@ -1,12 +1,10 @@
+require('dotenv').config();
+require('colors');
 const app = require('./app');
 const { PORT } = require('./constants');
 
-const start = async () => {
-  try {
-    await app.listen(PORT);
-  } catch (err) {
-    app.log.error(err);
-    process.exit(1);
-  }
-};
-start();
+async function startServer() {
+  await app.listen(PORT);
+}
+
+startServer().catch((err) => console.error(`${err.messaeg}`.red));

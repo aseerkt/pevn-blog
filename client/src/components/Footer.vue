@@ -31,9 +31,13 @@
         <div class="col-2">
           <ul>
             <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
-            <router-link class="link" to="#">Blogs</router-link>
+            <router-link class="link" :to="{ name: 'Blogs' }"
+              >Blogs</router-link
+            >
             <router-link class="link" to="#">Create Post</router-link>
-            <router-link class="link" to="#">Login In / Register</router-link>
+            <router-link class="link" :to="{ name: 'Login' }"
+              >Login In / Register</router-link
+            >
           </ul>
         </div>
       </div>
@@ -55,7 +59,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 footer {
   margin-top: auto;
   padding: 100px 25px;

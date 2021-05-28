@@ -7,4 +7,6 @@ app.get('/', async (request, reply) => {
   return { hello: 'world' };
 });
 
+app.register('/api/users', require('./routes/users'));
+
 module.exports = app;

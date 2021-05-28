@@ -8,7 +8,10 @@
   "dependencies": {
     "colors": "^1.4.0",
     "cross-env": "^7.0.3",
-    "fastify": "^3.16.2"
+    "dotenv": "^10.0.0",
+    "fastify": "^3.16.2",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node server",
